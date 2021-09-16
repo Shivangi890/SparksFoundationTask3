@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    </head>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height:100%;
+            margin:0;
+            position:relative;
+        }
+
+        #black
+        {
+            background: url("black.jpg") no-repeat;
+            background-size:100% 100%;
+            width:100%;
+            height:99em;
+            left:0;
+            top:0;
+            object-fit:cover;
+            position: absolute;
+
+        }
+        header{
+            width:100%;
+            height: 130px;
+            border-bottom:1px solid #5e5a5a;
+            background-color: rgba(110, 108, 108,0.206);
+            position:relative;
+
+        }
+        header img{
+
+            margin-top:20px;
+            margin-left:100px;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        header p{
+            font-family:'Times New Roman', Times, serif;
+            font-size:40px;
+            font-weight:bold;
+            color:white;
+            position:absolute;
+            left:200px;
+            top:20px;
+        }
+        header p #h1{
+            font-size:25px;
+            position:absolute;
+            
+        }
+        header p #h3{
+            color:rgb(228, 74, 74);
+        }
+        header a #a{
+            position:absolute;
+            left:700px;
+            top:50px;
+            font-size:25px;
+            color:rgb(202, 188, 170);
+        }
+        header a #b{
+            position:absolute;
+            left:790px;
+            top:50px;
+            font-size:25px;
+            color:rgb(202, 188, 170);
+            margin-left:10px;
+        }
+        header a #c{
+            position:absolute;
+            left:890px;
+            top:50px;
+            font-size:25px;
+            color:rgb(202, 188, 170);
+            margin-left:20px;
+            padding-left:20px;
+        }
+        header a #d{
+            position:absolute;
+            left:990px;
+            top:50px;
+            font-size:25px;
+            color:rgb(202, 188, 170);
+            margin-left:25px;
+            padding-left:20px;
+        }
+        header #donate{
+            float:right;
+            color:white;
+            margin:40px 40px 20px 20px;
+            padding:20px 40px;
+            background:rgb(228, 74, 74);
+            border-radius:20px;
+            font-size:25px;
+            transition: width 0.2s;
+        }
+        header #donate:hover{
+            color:rgb(228, 74, 74);
+            border: 2px solid rgb(228, 74, 74);
+            background-color:rgba(110, 108, 108,0.206);
+            width:150px;
+            padding-left:35px;
+            
+        }
+        header #donate a{
+            text-decoration: none;
+            color:white;
+        }
+        header #donate a:active{
+            text-decoration: none;
+            color:rgb(228,74,74);
+        }
+        #e{
+            position:absolute;
+            margin:10px;
+            top:165px;
+            z-index:2;
+
+        }
+        #f{
+            position:absolute;
+            margin:10px;
+            left:30px;
+            top:10px;
+            box-shadow:4px 4px 2px 0px #0e0d0d;
+            -webkit-box-shadow:4px 4px 2px 0px #0e0d0d;
+            -moz-box-shadow:4px 4px 2px 0px #0e0d0d;
+            border:5px solid black;
+        }
+        #g{
+            position:absolute;
+            margin:10px;
+            left:250px;
+            top:400px;
+            border:10px solid black;
+        }
+        #h{
+            position:absolute;
+            left:700px;
+            top:10px;
+            background:rgba(110, 108, 108,0.206);
+            width:600px;
+            height:900px;
+            margin:10px;
+            padding:30px;
+            border:5px solid #5e5a5a;
+            border-right:none;
+            border-left:none;
+            border-bottom:none;
+            margin-left:5px;
+        }
+ 
+        #h h3{
+            color:#a4e1ff;
+            font-size:35px;
+        }
+
+        #h #i{
+            font-size: 35px;
+            color:#e78150;
+            font-weight:bold;
+            padding:20px;
+            margin:10px;
+            margin-bottom:none;
+            padding-bottom:5px;
+        }
+        #h #j{
+            font-size:20px;
+            color:#878416;
+            font-weight:bold;
+            padding:0px 10px 10px 30px;
+            text-align: justify;
+        }
+        #k{
+            text-align:justify;
+            padding-left:160px;
+            padding-top:20px;
+            font-size:25px;
+            color:#a4e1ff;
+        }
+        
+        #footer{
+            background:linear-gradient(rgba(154, 170, 154, 0.678),rgba(156, 129, 79, 0.678));
+            background:-o-linear-gradient(rgba(154, 170, 154, 0.678),rgba(156, 129, 79, 0.678));
+            background:-webkit-linear-gradient(rgba(154, 170, 154, 0.678),rgba(156, 129, 79, 0.678));
+            background:-moz-linear-gradient(rgba(154, 170, 154, 0.678),rgba(156, 129, 79, 0.678));
+
+
+            position:absolute;
+            top:1200px;
+            width:100%;
+            height:350px;
+
+        }
+        #footer img{
+            margin-top:20px;
+            margin-left:100px;
+            position:absolute;
+
+        }
+        #footer p{
+            font-family:'Times New Roman', Times, serif;
+        font-size:40px;
+        font-weight:bold;
+        color:white;
+        position:absolute;
+        left:200px;
+        top:20px;
+        }
+        #footer p #h1{
+            font-size:25px;
+            position:absolute;
+            
+        }
+        #footer p #h3{
+            color:rgb(228, 74, 74);
+        }
+        #footer #m{
+            top:150px;
+            left:130px;
+            color:#350d0d;
+            font-size:30px;
+        }
+        #n{
+            position:absolute;
+            top:20px;
+            left:550px;
+            background:linear-gradient(rgba(5, 88, 97, 0.648),rgba(161, 147, 120, 0.678));
+            background:-webkit-linear-gradient(rgba(5, 88, 97, 0.648),rgba(161, 147, 120, 0.678));
+            background:-moz-linear-gradient(rgba(5, 88, 97, 0.648),rgba(161, 147, 120, 0.678));
+            background:-o-linear-gradient(rgba(5, 88, 97, 0.648),rgba(161, 147, 120, 0.678));
+
+            width:798px;
+            height:350px;
+        }
+        #n h3{
+            position:absolute;
+            left:20px;
+            top:20px;
+            font-size:30px;
+            letter-spacing: 5px;
+        }
+        ul{
+            margin:40px;
+            padding:40px 20px 20px 0px;
+            font-size:20px;
+        }
+        ul li{
+            list-style: none;
+            padding:4px;
+            color:indigo;
+        }
+        #n img{
+            position:absolute;
+            left:280px;
+            top:15px;
+            
+        }
+        #n h2{
+            position:absolute;
+            font-size:40px;
+            color:chocolate;
+            top:40px;
+            left:480px;
+        }
+        #n p{
+            position:absolute;
+               font-size: 30px;
+               color:rgb(54, 34, 4);
+               left:490px;
+               top:100px;
+
+        }
+
+
+    </style>
+    <body>
+        <div id="black">
+            <header>
+                <img src="logo1.png">
+                <p>Sparks Fo<span id="h3">undation</span> <br> <span id="h1"> Non-Profit Char<span id="h3">ity</span></p>
+
+                <a href="index.html"><h3 id="a">Home</h3></a>
+                <a href="AboutUs.html"><h3 id="b">About Us</h3></a>
+                <a href="#"><h3 id="c">Causes</h3></a>
+                <a href="contactUs.html"><h3 id="d">Contact</h3></a>
+        
+                <div id="donate"><a href="DonateNow.html">Donate</a></div>
+            </header>
+            <div id="e">
+                <div id="f"><img src="11.jpg" width="600px" height="500px"></div>
+                <div id="g"><img src="12.jpg" width="600px" height="500px"></div>  
+                <div id="h">
+                    <h3>---- About Us</h3>
+                    <p id="i">Step Forward <br>Serve The Huminity <br>Reach Out And Help. </p>
+                    <p id="j">The secret to happines lies in helping others. Never underestimate the difference YOU can make in the lives of the poor, the abused and the helpless. Spread sunshine in their lives, no matter what the weather may be.</p>
+                    <p id="k">--said by US<p>
+                    <p id="k">so let us come together to make a DIFFERENCE.</p>
+                </div>  
+            </div>
+            <div id="footer">
+                <img src="logo1.png">
+                <p>Sparks Fo<span id="h3">undation</span> <br> <span id="h1"> Non-Profit Char<span id="h3">ity</span></p>
+                <p id="m">You can satisfied <br>yourself by helping.</p>
+                <div id="n">
+                <h3>Explore Us:</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Our History</li>
+                    <li>Our Services</li>
+                    <li>Privacy Policy</li>
+                    <li>Contact</li>
+
+                </ul>
+                <img src="logo2.png">
+                <h2>Give us a call on: </h2>
+                <p>+91 9876543210</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+</html>

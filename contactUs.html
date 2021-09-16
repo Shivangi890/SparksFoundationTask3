@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    </head>
+    <style>
+        *
+        {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+
+        }
+        body,html{
+            height:100%;
+            position:relative;
+        }
+        #black
+        {
+            background: url("black.jpg") no-repeat;
+            
+            background-size:100% 100%;
+            width:100%;
+            height:70em;
+            left:0;
+            top:0;
+            object-fit:cover;
+            position: absolute;
+
+        }
+        header{
+            width:100%;
+            height: 130px;
+            border-bottom:1px solid #5e5a5a;
+            background-color: rgba(110, 108, 108,0.206);
+            position:relative;
+        }
+        header img{
+            background:url("logo1.png") no-repeat;
+            background-size:100% 100%;
+            width:90px;
+            height:100px;
+            margin-top:20px;
+            margin-left:100px;
+            position:absolute;
+            left:0;
+            right:0;
+        }
+         header p{
+        font-family:'Times New Roman', Times, serif;
+        font-size:40px;
+        font-weight:bold;
+        color:white;
+        position:absolute;
+        left:200px;
+        top:20px;
+        }
+        header p #h1{
+            font-size:25px;
+            position:absolute;
+            
+        }
+        header p #h3{
+            color:rgb(228, 74, 74);
+        }
+        #h2{
+            position:absolute;
+             left:680px;
+             top:50px;
+             font-size:25px;
+             
+        }
+        #h2 a{
+            padding:20px;
+            color:rgb(202, 188, 170);
+            text-decoration: none;
+            font-weight:bold;
+            padding-right:10px;
+        }
+        header #donate{
+            float:right;
+            color:white;
+            margin:40px 40px 20px 20px;
+            padding:20px 40px;
+            background:rgb(228, 74, 74);
+            border-radius:20px;
+            font-size:25px;
+            transition: width 0.2s;
+        }
+        header #donate:hover{
+            color:rgb(228, 74, 74);
+            border: 2px solid rgb(228, 74, 74);
+            background-color:rgba(110, 108, 108,0.206);
+            width:150px;
+            padding-left:35px;
+            
+        }
+        header #donate a{
+            text-decoration: none;
+            color:white;
+        }
+        header #donate a:active{
+            text-decoration: none;
+            color:rgb(228,74,74);
+        }
+        #address
+        {
+            box-shadow: 2px 4px 4px 4px #969696;
+             -webkit-box-shadow: 2px 4px 4px 4px #969696;
+             -moz-box-shadow: 2px 4px 4px 4px #969696;
+             width:800px;
+             height:150px;
+             position:absolute;
+             top:150px;
+             left:290px;
+             padding:30px;
+        }
+        #address img{
+            background:url("logo2.png") no-repeat;
+            background-size:100% 100%;
+            width:80px;
+            height:80px;
+            position:absolute;
+            left:90px;
+            top:35px;
+            
+        }
+        #address h2{
+            position:absolute;
+            font-size:25px;
+            color:chocolate;
+            top:40px;
+            left:195px;
+        }
+        #address p{
+            position:absolute;
+               font-size: 20px;
+               color:rgb(214, 179, 127);
+               left:195px;
+               top:75px;
+
+        }
+        #phone
+        {
+            box-shadow: 2px 4px 4px 4px #969696;
+             -webkit-box-shadow: 2px 4px 4px 4px #969696;
+             -moz-box-shadow: 2px 4px 4px 4px #969696;
+             width:800px;
+             height:150px;
+             position:absolute;
+             top:322px;
+             left:290px;
+             padding:30px;
+        }
+        #phone img{
+            background:url("logo3.png") no-repeat;
+            background-size:100% 100%;
+            width:80px;
+            height:80px;
+            position:absolute;
+            left:90px;
+            top:35px;
+            
+        }
+        #phone h2{
+            position:absolute;
+            font-size:25px;
+            color:chocolate;
+            top:40px;
+            left:195px;
+        }
+        #phone p{
+            position:absolute;
+               font-size: 20px;
+               color:rgb(214, 179, 127);
+               left:195px;
+               top:75px;
+
+        }
+        #email
+        {
+             box-shadow: 2px 4px 4px 4px #969696;
+             -webkit-box-shadow: 2px 4px 4px 4px #969696;
+             -moz-box-shadow: 2px 4px 4px 4px #969696;
+             
+             width:800px;
+             height:150px;
+             position:absolute;
+             top:500px;
+             left:290px;
+             padding:30px;
+        }
+        #email img{
+            background:url("logo4.png") no-repeat;
+            background-size:100% 100%;
+            width:80px;
+            height:80px;
+            position:absolute;
+            left:90px;
+            top:35px;
+            
+        }
+        #email h2{
+            position:absolute;
+            font-size:25px;
+            color:rgb(238, 231, 226);
+            top:40px;
+            left:195px;
+        }
+        #email p{
+            position:absolute;
+               font-size: 20px;
+               color:rgb(214, 179, 127);
+               left:195px;
+               top:75px;
+
+        }
+        
+
+
+    </style>
+    <body>
+        <div id="black">
+            <header>
+                <img>
+                <p>Sparks Fo<span id="h3">undation</span> <br> <span id="h1"> Non-Profit Char<span id="h3">ity</span></p>
+                 <div id="h2">
+                <a href="index.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="#">Causes</a>
+                <a href="contactUs.html">Contact</a>
+                </div>
+                <div id="donate"><a href="DonateNow.html">Donate</a></div>
+            </header>
+            <div id="address">
+                <img>
+                <h2>Address</h2>
+                <p>Mumbai, Aarey Milk Colony, D-4, <br>A.K. Marg</p>
+            </div>
+            <div id="phone">
+                <img>
+                <h2>Phone Number</h2>
+                <p>+91 9876543210</p>
+
+            </div>
+            <div id="email">
+                <img>
+                <h2>Email Address</h2>
+                <p>shivaji890@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>
